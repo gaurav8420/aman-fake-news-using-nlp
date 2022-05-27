@@ -1,0 +1,53 @@
+{% load static %}
+<html>
+<head>
+<title>Fake News Articles Detection Using NLP</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>Classifying Fake News Articles Using Natural
+Language Processing to Identify In-Article
+Attribution as a Supervised Learning Estimator</h1>
+		</div>
+		<div id="slogan">
+			
+		</div>
+	</div>
+	<div id="menu">
+		<ul>
+      <li><a href="{% url 'UploadNews' %}">Upload News Articles</a></li>
+      <li><a href="{% url 'DetectorAlgorithm' %}">Run Fake News Detector Algorithm</a></li>
+      <li><a href="{% url 'index' %}">Logout</a></li>
+   </ul>
+		<br class="clearfix" />
+	</div>
+	<div id="splash">
+		<img class="pic" src="{% static 'images/investor.JPG' %}" width="870" height="230" alt="" />
+	</div>
+	<br/>
+	 <center><font face="verdana" color="red">{{ data }}</font></center>
+	 <br/>
+	<p align="justify"><font size="3" style="font-family: Comic Sans MS">
+	Abstract-Intentionally deceptive content presented under the
+guise of legitimate journalism is a worldwide information accuracy
+and integrity problem that affects opinion forming, decision
+making, and voting patterns. Most so-called 'fake news' is initially
+distributed over social media conduits like Facebook and Twitter
+and later finds its way onto mainstream media platforms such as
+traditional television and radio news.</p>
+<p>The fake news stories that
+are initially seeded over social media platforms share key linguistic
+characteristics such as making excessive use of unsubstantiated
+hyperbole and non-attributed quoted content. In this paper, the
+results of a fake news identification study that documents the
+performance of a fake news classifier are presented. The Textblob,
+Natural Language, and SciPy Toolkits were used to develop a novel
+fake news detector that uses quoted attribution in a Bayesian
+machine learning system as a key feature to estimate the likelihood
+that a news article is fake.</p>
+</body>
+</html>
